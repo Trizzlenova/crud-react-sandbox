@@ -19,10 +19,10 @@ ReactDOM.render(
         <div>
           <Header/>
           <Route path="/" exact={true} component={Welcome}/>
-          <Routh path='/users' component={User}/>
           <Routh path='/cities' component={City}/>
           <Routh path='/posts' component={Post}/>
-          // <PrivateRoute path="/feature" component={Feature}/>
+          <Route path="/user/:userId" component={User}/>
+          <PrivateRoute path="/feature" component={Feature}/>
         </div>
     </Router>
   </Provider>
